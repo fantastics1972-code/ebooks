@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExportPilot | AI 전자책 출판 & 내보내기 최적화 솔루션</title>
+  <meta name="description" content="Canva, Docs에서 출력한 전자책의 글꼴 깨짐, 모바일 레이아웃 오류, Gumroad 20MB 제한으로 인한 다운로드 타임아웃 및 환불 문제를 해결하세요. 백엔드 이원화 및 마스터 노션 허브 연동으로 완벽한 독자 경험(CX)을 구축합니다.">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ExportPilot - AI 전자책 내보내기 및 배송 최적화">
+  <meta property="og:description" content="글꼴 저작권 분쟁, 20MB 다운로드 타임아웃, 버전 CS 지옥을 벗어나세요. 이원화 배송과 마스터 노션 허브로 환불률 0%에 도전합니다.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header id="main-header">
+    <div class="container header-container">
+      <div class="logo">
+        <span class="logo-icon">🚀</span>
+        <span class="logo-text">Export<span>Pilot</span></span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#debates">3대 치명적 맹점</a></li>
+          <li><a href="#simulator">전송 시뮬레이터</a></li>
+          <li><a href="#auditor">전자책 진단기</a></li>
+          <li><a href="#solution">3단계 해결책</a></li>
+        </ul>
+      </nav>
+      <div class="header-cta">
+        <a href="#waitlist" class="btn btn-primary btn-sm" id="nav-cta-btn">얼리버드 신청</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="badge">💡 1인 지식창업가 & 작가를 위한 테크니컬 가이드</div>
+        <h1 class="gradient-text">전자책 100권 판매보다 중요한 건,<br>단 1권의 불량도 없는 내보내기 전략입니다.</h1>
+        <p class="hero-lead">
+          Canva, Docs의 화면(미리보기)만 믿고 바로 출시하셨나요? <br>
+          독자의 폰트 깨짐, 모바일 레이아웃 붕괴, Gumroad 20MB 제한으로 인한 다운로드 실패와 환불 문제를 단번에 해결하는 <strong>백엔드 이원화(Dynamic Asset Delivery)</strong> 솔루션을 만나보세요.
+        </p>
+        <div class="hero-actions">
+          <a href="#auditor" class="btn btn-accent btn-lg" id="hero-audit-btn">
+            내 전자책 자가진단 및 감수 받기 (1분)
+          </a>
+          <a href="#simulator" class="btn btn-secondary btn-lg" id="hero-sim-btn">
+            이원화 배송 시뮬레이션 체험
+          </a>
+        </div>
+        <div class="hero-trust">
+          <span>🛡️ 글꼴 저작권 리스크 zero</span>
+          <span>⚡ 다운로드 타임아웃 해결</span>
+          <span>🔄 노션 마스터 허브 자동 연동</span>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="glass-card main-dashboard">
+          <div class="dashboard-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="window-title">ExportPilot Asset Monitor</span>
+          </div>
+          <div class="dashboard-body">
+            <div class="stat-grid">
+              <div class="stat-card">
+                <span class="stat-label">고객 인도 성공률</span>
+                <span class="stat-value text-green">100%</span>
+                <span class="stat-sub">타임아웃 차단 완료</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-label">평균 CS 발생 건수</span>
+                <span class="stat-value text-purple">0건</span>
+                <span class="stat-sub">버전 자동 업데이트 적용</span>
+              </div>
+            </div>
+            
+            <div class="active-assets">
+              <div class="asset-title">실시간 배송 자산 분산 상태</div>
+              <div class="asset-flow">
+                <div class="asset-node">
+                  <span class="node-icon">🛒</span>
+                  <span class="node-name">판매 플랫폼</span>
+                  <span class="node-status text-blue">가벼운 가이드 (3MB)</span>
+                </div>
+                <div class="flow-arrow">➡️</div>
+                <div class="asset-node accent-node">
+                  <span class="node-icon">☁️</span>
+                  <span class="node-name">AWS S3 / Notion Hub</span>
+                  <span class="node-status text-green">고해상도 원본 (45MB)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: The 3 Core Debates (3대 치명적 맹점) -->
+  <section id="debates">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-title text-red">THE BLIND SPOTS</span>
+        <h2>당신이 몰랐던 전자책 내보내기의 3가지 치명적 맹점</h2>
+        <p class="section-desc">일반적인 문서 관리 상식만 따르다간 지식 비즈니스가 무너집니다. 15분의 사소한 점검 차이가 독자 만족도와 브랜드 이미지를 가릅니다.</p>
+      </div>
+      
+      <div class="debates-grid">
+        <!-- Card 1 -->
+        <div class="glass-card debate-card">
+          <div class="debate-badge danger">맹점 1</div>
+          <div class="card-icon">📁</div>
+          <h3>보존 표준 PDF/A의 무분별한 사용</h3>
+          <p class="debate-desc">
+            일반적인 IT 지식은 장기 보존을 위해 <strong>PDF/A</strong> 설정을 권장하지만, 이는 유료 판매 환경에서 재앙이 될 수 있습니다.
+          </p>
+          <div class="debate-compare">
+            <div class="compare-box negative">
+              <strong>기존 방식 (PDF/A 강제)</strong>
+              <p>Gumroad 등 상거래 플랫폼의 자동 다운로드, 스트리밍 뷰어, 구매자 정보 자동 삽입(워터마크) 기능과 충돌하여 다운로드 오류 유발.</p>
+            </div>
+            <div class="compare-box positive">
+              <strong>ExportPilot 권장 방식</strong>
+              <p>배포 환경에서는 일반 표준 PDF로 출력하여 플랫폼과의 호환성을 100% 확보하고, 글꼴은 '하위 집합 포함'을 통해 변형을 막습니다.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="glass-card debate-card">
+          <div class="debate-badge danger">맹점 2</div>
+          <div class="card-icon">🏷️</div>
+          <h3>파일명에서 버전 및 메타데이터 전면 제거</h3>
+          <p class="debate-desc">
+            "고객에게 단정한 인상을 주기 위해 파일명에서 날짜와 버전 정보(v2_final)를 지우라"는 조언은 극심한 CS(고객문의) 폭탄을 불러옵니다.
+          </p>
+          <div class="debate-compare">
+            <div class="compare-box negative">
+              <strong>기존 방식 (메타데이터 제거)</strong>
+              <p>전자책이 업데이트되었을 때, 고객은 본인이 다운로드한 파일이 최신인지 알 길이 없어 "이게 최신본 맞나요?"라는 동일 CS가 빗발침.</p>
+            </div>
+            <div class="compare-box positive">
+              <strong>ExportPilot 권장 방식</strong>
+              <p>파일명은 단정하게 유지(Ebook-Blueprint.pdf)하되, 서론 및 판권 페이지에 버전 마크(v1.2)와 업데이트 로그를 이원화(Decoupling)하여 노출합니다.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="glass-card debate-card">
+          <div class="debate-badge danger">맹점 3</div>
+          <div class="card-icon">⚡</div>
+          <h3>단순 로컬 검증과 용량 압축의 오판</h3>
+          <p class="debate-desc">
+            내 컴퓨터에서 잘 열리는 고용량 파일(20MB 이상)도 플랫폼 배송 서버를 거칠 때는 네트워크 지연에 따라 다운로드 실패를 일으킵니다.
+          </p>
+          <div class="debate-compare">
+            <div class="compare-box negative">
+              <strong>기존 방식 (무조건적 화질 타협)</strong>
+              <p>플랫폼 타임아웃을 막고자 이미지 해상도를 150 DPI 이하로 강제 압축하여 태블릿/4K 모니터 독자들에게 '조악한 저품질' 인상을 심어줌.</p>
+            </div>
+            <div class="compare-box positive">
+              <strong>ExportPilot 권장 방식</strong>
+              <p>플랫폼에는 3MB 이하의 핵심 가이드 PDF만 제공하고, 내부에 AWS 고속 스토리지 및 전용 노션 허브의 고화질 원본(300 DPI+) 다운로드 링크를 삽입합니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Interactive Simulator (이원화 전송 시뮬레이터) -->
+  <section id="simulator">
+    <div class="simulator-bg-glow"></div>
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-title text-green">INTERACTIVE SIMULATION</span>
+        <h2>파일 크기 및 전송 방식 체감 시뮬레이터</h2>
+        <p class="section-desc">전자책의 용량과 전송 기술에 따라 독자의 다운로드 성공률과 시간 초과(Timeout) 위험이 어떻게 변화하는지 직접 확인해 보세요.</p>
+      </div>
+
+      <div class="simulator-wrapper glass-card">
+        <div class="simulator-control">
+          <div class="control-group">
+            <label class="control-label">1. 테스트할 전자책 용량 선택</label>
+            <div class="size-selector">
+              <button class="size-btn active" data-size="5">5MB (텍스트 중심)</button>
+              <button class="size-btn" data-size="25">25MB (인포그래픽 다수)</button>
+              <button class="size-btn" data-size="60">60MB (고화질 풀컬러/마스터클래스)</button>
+            </div>
+          </div>
+          
+          <div class="control-group">
+            <label class="control-label">2. 전송 방식 선택</label>
+            <div class="method-selector">
+              <button class="method-btn active" data-method="standard">일반 직접 업로드 방식</button>
+              <button class="method-btn" data-method="exportpilot">ExportPilot 이원화 분산 배송</button>
+            </div>
+          </div>
+          
+          <button class="btn btn-accent btn-lg btn-block" id="start-sim-btn">시뮬레이션 전송 시작</button>
+        </div>
+
+        <div class="simulator-display">
+          <div class="transmission-road">
+            <div class="sender-node">
+              <span class="node-icon">💻</span>
+              <span class="node-title">판매 서버</span>
+            </div>
+            
+            <div class="signal-line">
+              <div class="signal-particle" id="particle"></div>
+              <div class="signal-progress-track"></div>
+            </div>
+            
+            <div class="receiver-node">
+              <span class="node-icon">📱</span>
+              <span class="node-title">독자 모바일</span>
+            </div>
+          </div>
+
+          <div class="simulation-status">
+            <div class="status-indicator">
+              <span class="status-dot green" id="sim-indicator"></span>
+              <span class="status-text" id="sim-status-msg">대기 중...</span>
+            </div>
+            <div class="progress-container">
+              <div class="progress-bar-fill" id="sim-progress-bar" style="width: 0%"></div>
+            </div>
+            <div class="speed-info">
+              <span>다운로드 크기: <strong id="sim-display-size">5MB</strong></span>
+              <span>다운로드 상태: <strong id="sim-result-text" class="text-blue">대기</strong></span>
+            </div>
+          </div>
+
+          <div class="simulation-report" id="sim-report">
+            <h4>💡 분석 및 리포트</h4>
+            <p id="sim-report-desc">위 조건을 설정하여 전송 버튼을 누르시면 실시간 네트워크 품질 모사 시뮬레이션 결과가 제공됩니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Interactive Auditor (자가 진단 도구) -->
+  <section id="auditor">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-title text-accent">TECH AUDIT</span>
+        <h2>내 전자책 내보내기 & 리스크 자가 진단기</h2>
+        <p class="section-desc">현재 제작 중이거나 판매 중인 전자책의 파일 사양과 유통 설정을 기반으로, 법적·기술적 취약점을 1분 만에 진단해 드립니다.</p>
+      </div>
+
+      <div class="auditor-wrapper glass-card">
+        <div class="audit-steps" id="audit-box">
+          
+          <!-- Step 1 -->
+          <div class="audit-question" id="q-step-1">
+            <span class="q-num">Q1 / 3</span>
+            <h3>전자책 제작에 주로 사용하시는 도구와 출력 경로는 무엇인가요?</h3>
+            <div class="options-vertical">
+              <label class="option-card">
+                <input type="radio" name="q1" value="google-docs" checked>
+                <div class="option-content">
+                  <strong>Google Docs (파일 > 다운로드 > PDF 문서)</strong>
+                  <span>비교적 호환성이 양호하나 폰트 임베딩이 불완전할 수 있습니다.</span>
+                </div>
+              </label>
+              
+              <label class="option-card">
+                <input type="radio" name="q1" value="ms-word-low">
+                <div class="option-content">
+                  <strong>MS Word (다른 이름으로 저장 > PDF '최소 크기' 설정)</strong>
+                  <span>파일 크기는 작아지나 텍스트 왜곡 및 심각한 이미지 품질 저하가 발생합니다.</span>
+                </div>
+              </label>
+
+              <label class="option-card">
+                <input type="radio" name="q1" value="canva-print">
+                <div class="option-content">
+                  <strong>Canva (PDF 인쇄 고품질 출력)</strong>
+                  <span>시각 요소 품질은 보장되나 파일 용량이 급증하여 다운로드 문제를 야기합니다.</span>
+                </div>
+              </label>
+
+              <label class="option-card">
+                <input type="radio" name="q1" value="custom-fonts">
+                <div class="option-content">
+                  <strong>개인 소장 특수 서체를 사용한 표준 PDF 내보내기</strong>
+                  <span>독자 기기에 글꼴이 없을 때 '대체(Substitution)' 렌더링 깨짐 및 저작권 리스크가 큽니다.</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 2 (Hidden by default) -->
+          <div class="audit-question hidden" id="q-step-2">
+            <span class="q-num">Q2 / 3</span>
+            <h3>내보내기 완료된 전자책의 파일 용량과 이미지 해상도는 어느 수준인가요?</h3>
+            <div class="options-vertical">
+              <label class="option-card">
+                <input type="radio" name="q2" value="under-150-10mb" checked>
+                <div class="option-content">
+                  <strong>10MB 미만 / 150 DPI 수준으로 최적화 압축함</strong>
+                  <span>용량은 안전하나, 태블릿이나 고해상도 모니터에서 이미지 가독성이 떨어집니다.</span>
+                </div>
+              </label>
+              
+              <label class="option-card">
+                <input type="radio" name="q2" value="over-300-20mb">
+                <div class="option-content">
+                  <strong>20MB 이상 / 300 DPI+ 고화질 원본 그대로 유지</strong>
+                  <span>디지털 기기에서 가장 선명하게 보이지만, 플랫폼 서버 전송 시 높은 확률로 끊김이 발생합니다.</span>
+                </div>
+              </label>
+
+              <label class="option-card">
+                <input type="radio" name="q2" value="no-compress-high">
+                <div class="option-content">
+                  <strong>압축 수준 및 DPI 설정을 확인해보지 않음</strong>
+                  <span>잠재적으로 저화질 낙인 또는 다운로드 중단 위험을 안고 있습니다.</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 3 (Hidden by default) -->
+          <div class="audit-question hidden" id="q-step-3">
+            <span class="q-num">Q3 / 3</span>
+            <h3>고객에게 전달하는 파일 관리 및 버전 표기는 어떻게 처리하고 계신가요?</h3>
+            <div class="options-vertical">
+              <label class="option-card">
+                <input type="radio" name="q3" value="no-version-name" checked>
+                <div class="option-content">
+                  <strong>파일명에 버전 제거 (예: Ebook.pdf) + 본문 내 버전 미기재</strong>
+                  <span>브랜딩은 깔끔하나 업데이트 시 독자가 최신 여부를 몰라 무차별 CS가 유입됩니다.</span>
+                </div>
+              </label>
+              
+              <label class="option-card">
+                <input type="radio" name="q3" value="version-filename">
+                <div class="option-content">
+                  <strong>파일명에 버전 및 날짜 기재 (예: Ebook_v1.2_final.pdf)</strong>
+                  <span>관리는 쉬우나 고객이 다운로드 받았을 때 전문적이지 못한 인상을 줍니다.</span>
+                </div>
+              </label>
+
+              <label class="option-card">
+                <input type="radio" name="q3" value="decouple-pilot">
+                <div class="option-content">
+                  <strong>파일명 분리 + 내부에 실시간 노션 대시보드 링크 제공</strong>
+                  <span>안전하고 체계적인 대량 배송 모델(ExportPilot 표준)을 준수하고 있습니다.</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="audit-nav">
+            <button class="btn btn-secondary hidden" id="audit-prev-btn">이전 단계</button>
+            <button class="btn btn-accent" id="audit-next-btn">다음 단계</button>
+          </div>
+
+          <div class="audit-progress">
+            <div class="progress-bar"><div class="fill" id="audit-progress-fill" style="width: 33%"></div></div>
+            <div class="progress-text" id="audit-progress-text">1단계 / 3단계</div>
+          </div>
+        </div>
+
+        <!-- Audit Result (Hidden by default) -->
+        <div class="audit-result hidden" id="audit-result-box">
+          <div class="result-header">
+            <div class="risk-badge" id="audit-risk-badge">위험 등급</div>
+            <h3>내 전자책 내보내기 취약점 분석 결과</h3>
+          </div>
+          
+          <div class="result-score-box">
+            <span class="score-label">기술적 무결성 점수</span>
+            <span class="score-value" id="audit-score-num">35 / 100</span>
+          </div>
+
+          <div class="result-details">
+            <div class="detail-item">
+              <strong>🚨 발견된 기술 및 법적 취약점:</strong>
+              <p id="audit-problem-desc">로딩 중...</p>
+            </div>
+            <div class="detail-item safe-solution">
+              <strong>🛡️ ExportPilot의 맞춤형 보안 전략:</strong>
+              <p id="audit-solution-desc">로딩 중...</p>
+            </div>
+          </div>
+
+          <div class="result-actions">
+            <a href="#waitlist" class="btn btn-accent btn-lg block-btn">최적화 세팅 얼리버드 신청하기</a>
+            <button class="btn btn-link" id="restart-audit-btn">다시 진단하기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Solutions & Action Items (ExportPilot 3단계 해결책) -->
+  <section id="solution">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-title text-blue">EXPORTPILOT BLUEPRINT</span>
+        <h2>지속 가능한 전자책 비즈니스를 위한 3단계 솔루션</h2>
+        <p class="section-desc">일회성 방어적 대응에서 벗어나, 시스템과 이원화 배송 엔진을 활용한 확장형 모델로 전면 전환합니다.</p>
+      </div>
+
+      <div class="solution-steps">
+        <!-- Step 1 -->
+        <div class="solution-item">
+          <div class="solution-meta">
+            <span class="sol-num">01</span>
+            <span class="sol-badge">즉시 실행 가능</span>
+          </div>
+          <div class="solution-body">
+            <h3>마스터 노션(Notion) 링크 허브 구축</h3>
+            <p>
+              전자책 내부에 고정된 정보를 인쇄하는 대신, <strong>구매자 전용 독점 노션 대시보드</strong>를 연동합니다. 
+              여기에 고화질 원본 다운로드, 실시간 보충 템플릿, 업데이트 히스토리를 제공합니다.
+            </p>
+            <ul class="sol-bullets">
+              <li><strong>인앱 버전 통제:</strong> 전자책 표지 뒷장과 판권란에 '최신 업데이트 일자 및 v1.2' 버전을 명시하여 CS 원천 차단</li>
+              <li><strong>동적 자산 관리:</strong> 본문을 매번 수정할 필요 없이 노션 내 정보 업데이트로 독자에게 실시간 최신본 공급</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="solution-item">
+          <div class="solution-meta">
+            <span class="sol-num">02</span>
+            <span class="sol-badge accent-badge">백엔드 구축</span>
+          </div>
+          <div class="solution-body">
+            <h3>백엔드 이원화(Dynamic Asset Delivery) 세팅</h3>
+            <p>
+              Gumroad, Shopify 등 판매 플랫폼에는 5MB 이하의 텍스트 중심 '웰컴 웰커밍 가이드 PDF'만 등록하고, 
+              고화질 이미지와 본문 원본은 보안이 보장되는 고속 클라우드(AWS S3 또는 Google Drive) 링크를 활용합니다.
+            </p>
+            <ul class="sol-bullets">
+              <li><strong>다운로드 100% 성공:</strong> 초고속 다운로드로 로딩 지연 및 시간 초과에 따른 환불 차단</li>
+              <li><strong>품질 보존:</strong> 300 DPI 이상의 선명한 인포그래픽, 다이어그램, 예제 소스 무손실 유지</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="solution-item">
+          <div class="solution-meta">
+            <span class="sol-num">03</span>
+            <span class="sol-badge">법적 안전장치</span>
+          </div>
+          <div class="solution-body">
+            <h3>글꼴 단일화 및 임베딩 완전성 스캔</h3>
+            <p>
+              웹 및 모바일 기기(iOS, Android, Windows)에서 100% 호환되는 구글 웹폰트(Noto Sans, Montserrat 등)로 서체를 단일화합니다. 
+              배포 전 Adobe Acrobat 및 리더 속성 스캔을 거쳐 폰트 데이터가 하위 집합으로 올바르게 임베딩되었는지 전수 확인합니다.
+            </p>
+            <ul class="sol-bullets">
+              <li><strong>폰트 대체 방지:</strong> 독자의 시스템 서체 매핑 강제로 인한 텍스트 깨짐, 자간 뒤틀림 예방</li>
+              <li><strong>저작권 위반 차단:</strong> 상업적 사용 권한이 제한된 시스템 서체가 유출되어 벌어지는 법적 분쟁 방어</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Early Bird Waitlist (사전 신청 폼) -->
+  <section id="waitlist">
+    <div class="container">
+      <div class="waitlist-card glass-card">
+        <div class="waitlist-header text-center">
+          <span class="badge accent">EARLY BIRD LAUNCH</span>
+          <h2>ExportPilot 구축 대행 패키지 신청</h2>
+          <p class="pricing-text">정식 런칭가: <span class="old-price">590,000원</span> → 얼리버드 선착순 혜택가 <strong>290,000원</strong></p>
+          <p class="desc">지금 사전 예약을 하시면 노션 마스터 허브 설계 및 이원화 전송 인프라(AWS S3/Drive), 서체 라이선스 검증까지 전부 직접 대행해 드립니다.</p>
+        </div>
+
+        <form id="waitlist-form" class="signup-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="user-name">신청자명 (작가명) *</label>
+              <input type="text" id="user-name" placeholder="홍길동" required>
+            </div>
+            <div class="form-group">
+              <label for="ebook-title">전자책 제목/주제 *</label>
+              <input type="text" id="ebook-title" placeholder="예: AI 수익화 무작정 따라하기" required>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone-number">연락처 *</label>
+              <input type="tel" id="phone-number" placeholder="010-1234-5678" required>
+            </div>
+            <div class="form-group">
+              <label for="creation-tool">주요 제작 도구 *</label>
+              <select id="creation-tool" required>
+                <option value="" disabled selected>도구를 선택해 주세요</option>
+                <option value="canva">Canva (캔바)</option>
+                <option value="docs">Google Docs (구글 문서)</option>
+                <option value="word">MS Word (워드)</option>
+                <option value="indesign">Adobe InDesign (인디자인)</option>
+                <option value="etc">기타 제작 프로그램</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="target-platform">주 유통 판매 플랫폼 (선택)</label>
+            <input type="text" id="target-platform" placeholder="예: 크몽, Gumroad, 쇼피파이, 블로그 직접판매 등">
+          </div>
+
+          <div class="form-checkbox">
+            <input type="checkbox" id="privacy-agree" required>
+            <label for="privacy-agree">개인정보 수집 및 최적화 진단 연락망 등록에 동의합니다. (필수)</label>
+          </div>
+
+          <button type="submit" class="btn btn-accent btn-lg btn-block" id="submit-btn">얼리버드 특가로 인프라 신청하기</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: FAQ -->
+  <section id="faq">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>자주 묻는 질문 (FAQ)</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>Q. 노션 링크를 넣으면 독자가 외부로 무단 유출하여 자산이 손실되지 않나요?</h4>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>이를 방어하기 위해 ExportPilot은 1회성 토큰 인증이 탑재된 클라우드 링크나, 노션 내에서 '복제 금지 및 보기 전용'으로 세팅하는 기술을 지원합니다. 또한 유료 독자만을 위한 실시간 업데이트 및 Q&A 채널을 노션 내에 통합하여, 무단 유출본보다 정품 인증본이 압도적인 고객 가치를 가지도록 비즈니스 메커니즘을 변경합니다.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>Q. 판매 플랫폼의 PDF/A 옵션을 꺼야 하는 이유는 정확히 무엇인가요?</h4>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>PDF/A는 영구 저장을 위해 내부 스크립트, 외부 하이퍼링크, 압축 방식 등을 강력하게 차단하는 규격입니다. Gumroad나 기타 전자책 판매 플랫폼에서 구매자의 결제 정보(이메일, 이름)를 전자책 내부 첫 페이지나 헤더에 자동으로 삽입(워터마킹)하고 실시간 웹 뷰어로 보낼 때, PDF/A의 엄격한 보안 프로토콜과 충돌하여 다운로드 에러나 파일 손상이 발생합니다.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>Q. 파일 크기 20MB 제한이 왜 다운로드 실패의 마지노선인가요?</h4>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>일반적으로 모바일 LTE/5G 환경 또는 해외 고객의 네트워크 상태는 불안정합니다. 파일 용량이 20MB를 초과하면 무선 다운로드 중에 30초 이상 통신 지연이 발생할 가능성이 높으며, 대부분의 상거래 플랫폼(Gumroad, 크몽 등)은 일정 서버 타임아웃 제한(30~45초)을 걸어두어 다운로드를 강제 끊김 처리합니다. 따라서 5MB 이하의 웰컴 PDF를 통해 구매를 즉시 완료하게 한 후 고화질 원본을 분산 다운로드 시키는 것이 결제 전환율 및 환불 예방의 핵심입니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Modal for Waitlist -->
+  <div id="success-modal" class="modal hidden">
+    <div class="modal-content glass-card">
+      <span class="close-modal">&times;</span>
+      <div class="modal-icon">🎉</div>
+      <h3>사전 예약 신청이 완료되었습니다!</h3>
+      <p>작성해주신 메일과 연락처로 빠른 시일 내에 연락을 드리겠습니다.</p>
+      <div class="benefit-box">
+        <p><strong>🎁 제공 예정 얼리버드 혜택:</strong></p>
+        <ul>
+          <li>최적화 패키지 50% 특별 할인 (월 59만원 -> 29만원 단판형)</li>
+          <li>기존 배포 중인 전자책(PDF)에 대한 무상 글꼴 및 렌더링 호환성 스캔 검수</li>
+          <li>마스터 노션 허브 디자인 템플릿 제공</li>
+        </ul>
+      </div>
+      <button class="btn btn-accent" id="close-modal-btn">확인</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="logo">
+          <span class="logo-icon">🚀</span>
+          <span class="logo-text">Export<span>Pilot</span></span>
+        </div>
+        <p class="footer-moto">디지털 자산의 사소한 기술적 차이가 전문가와 아마추어를 가릅니다.</p>
+      </div>
+      <hr class="footer-divider">
+      <div class="footer-bottom">
+        <p>&copy; 2026 ExportPilot. All rights reserved.</p>
+        <p class="footer-legal">ExportPilot은 지식 창업자의 안정적인 자산 관리 및 독자 경험(CX) 향상을 돕는 테크니컬 디자인 컨설팅 서비스입니다.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Javascript File -->
+  <script src="app.js"></script>
+</body>
+</html>
